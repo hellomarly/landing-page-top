@@ -7,7 +7,7 @@
 .header{
     display: flex;
     align-items: center;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 .menu{
     display: flex; 
@@ -46,14 +46,14 @@
 .right img{
     object-fit: cover;
     width: 100%;
-    height: 50%;
-}
+    max-height: 200px
+    }
 button{
     color: white;
     color: black;
 }
-h2{
-    padding-left: 10%;
+.nos-solutions h2{
+    padding-left: 5%;
 }
 .middle-section{
     display: flex;
@@ -61,16 +61,40 @@ h2{
     padding-right: 10%;
 
 }
+.solu{
+    margin: 2px;
+    max-width: 200px;
+    overflow: hidden;
+
+}
 .solu img{
     object-fit: cover;
     width: 100%;
     height: 50%;
+    border-radius: 5px
 }
 .avis{
     background-color: beige;
     padding: 5%;
+    text-align: center;
 }
 .signature-avis{
     text-align: right;
-    padding-right: 12%;
+    padding-right: 20%;
+}
+.bottum-cta{
+    display: flex;
+    padding: 25px;
+}
+.cta-item {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.bottum-cta button{
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
