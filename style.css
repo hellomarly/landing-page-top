@@ -10,10 +10,8 @@
     padding-left: 5%;
 }
 .menu{
-    display: flex; 
-    flex: auto;
-    position:fixed;
-    right: 7%;
+    margin-left:auto;
+    margin-right:5%;
 }
 .menu-link{
     font-size: 24px;
@@ -25,6 +23,7 @@
     background-color: white;
     color: black;
 }
+/*1st section*/
 .top-section{
     display: flex;
 }
@@ -47,11 +46,24 @@
     object-fit: cover;
     width: 100%;
     max-height: 200px
-    }
-button{
-    color: white;
-    color: black;
 }
+button{
+    outline: none;
+    color: #834814;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #834814;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+button:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+  }
+/*Section nos solutions*/
 .nos-solutions h2{
     padding-left: 5%;
 }
@@ -59,39 +71,52 @@ button{
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-
 }
 .solu{
+    flex: 1;
     margin: 2px;
-    max-width: 200px;
     overflow: hidden;
-
 }
 .solu img{
     object-fit: cover;
     width: 100%;
-    height: 50%;
-    border-radius: 5px
+    height: 200px;
+    border-radius: 5px;
 }
+/*section avis*/
 .avis{
     background-color: beige;
     padding: 5%;
     text-align: center;
+    font-size: large;
 }
 .signature-avis{
     text-align: right;
     padding-right: 20%;
 }
+/*Green section*/
 .bottum-cta{
     display: flex;
     padding: 25px;
+    background-color: green;
+    margin: 4%;
+    border-radius: 4px;
 }
 .cta-item {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
-.bottum-cta button{
+.cta-item h2{
+    margin: 0px;
+    font-size: large;
+    color: white;
 }
+.cta-item p{
+    color: white;
+}
+/*footer*/
 footer{
     background-color: black;
     color: white;
